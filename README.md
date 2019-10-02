@@ -12,7 +12,7 @@
 Use `Node.js` and `Express` to build an API that performs _CRUD_ operations on `blog posts`.
 
 ### Project Setup
-
+ - [X]
 - **Fork** and **Clone** this repository.
 - **CD into the folder** where you cloned the repository.
 - Type `npm install` to download all dependencies.
@@ -127,6 +127,8 @@ When the client makes a `POST` request to `/api/posts/:id/comments`:
   - respond with HTTP status code `500` (Server Error).
   - return the following JSON object: `{ error: "There was an error while saving the comment to the database" }`.
 
+
+- [X]
 When the client makes a `GET` request to `/api/posts`:
 
 - If there's an error in retrieving the _posts_ from the database:
@@ -134,6 +136,8 @@ When the client makes a `GET` request to `/api/posts`:
   - respond with HTTP status code `500`.
   - return the following JSON object: `{ error: "The posts information could not be retrieved." }`.
 
+
+- [X]
 When the client makes a `GET` request to `/api/posts/:id`:
 
 - If the _post_ with the specified `id` is not found:
@@ -146,6 +150,8 @@ When the client makes a `GET` request to `/api/posts/:id`:
   - respond with HTTP status code `500`.
   - return the following JSON object: `{ error: "The post information could not be retrieved." }`.
 
+
+- []
 When the client makes a `GET` request to `/api/posts/:id/comments`:
 
 - If the _post_ with the specified `id` is not found:
@@ -158,6 +164,8 @@ When the client makes a `GET` request to `/api/posts/:id/comments`:
   - respond with HTTP status code `500`.
   - return the following JSON object: `{ error: "The comments information could not be retrieved." }`.
 
+
+- []
 When the client makes a `DELETE` request to `/api/posts/:id`:
 
 - If the _post_ with the specified `id` is not found:
@@ -169,6 +177,9 @@ When the client makes a `DELETE` request to `/api/posts/:id`:
   - cancel the request.
   - respond with HTTP status code `500`.
   - return the following JSON object: `{ error: "The post could not be removed" }`.
+
+
+
 
 When the client makes a `PUT` request to `/api/posts/:id`:
 
